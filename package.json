@@ -38,7 +38,6 @@
     "popup"
   ],
   "dependencies": {
-    "@icons/material": "^0.2.4",
     "lodash": ">4.17.4",
     "material-colors": "^1.2.1",
     "prop-types": "^15.5.10",

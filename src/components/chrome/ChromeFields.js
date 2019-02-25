@@ -5,7 +5,7 @@ import reactCSS from 'reactcss'
 import color from '../../helpers/color'
 
 import { EditableInput } from '../common'
-import UnfoldMoreHorizontalIcon from '@icons/material/UnfoldMoreHorizontalIcon'
+import UnfoldMoreHorizontalIcon from '../../@icons/material/UnfoldMoreHorizontalIcon'
 
 export class ChromeFields extends React.Component {
   state = {
@@ -69,9 +69,9 @@ export class ChromeFields extends React.Component {
       }, e)
     } else if (data.h || data.s || data.l) {
       // Remove any occurances of '%'.
-      if (typeof(data.s) === 'string' && data.s.includes('%')) { data.s = data.s.replace('%', '') } 
+      if (typeof(data.s) === 'string' && data.s.includes('%')) { data.s = data.s.replace('%', '') }
       if (typeof(data.l) === 'string' && data.l.includes('%')) { data.l = data.l.replace('%', '') }
-      
+
       this.props.onChange({
         h: data.h || this.props.hsl.h,
         s: Number((data.s && data.s) || this.props.hsl.s),
